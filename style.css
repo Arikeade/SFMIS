@@ -1,0 +1,108 @@
+body {
+    margin: 20px;
+    color: #6c63ff;
+  }
+  .mycol-md-6 {
+    padding: 20px;
+    box-shadow: 3px 3px #888888;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+  
+  h1 :hover {
+    text-decoration: underline;
+  }
+  
+  .text-center {
+    margin: 40px;
+  }
+  
+  .text-center:hover {
+    text-decoration: underline;
+  }
+  
+  .form-control {
+    padding: 15px;
+    border-radius: 8px;
+    border-color: #6c63ff;
+  }
+  
+  .mycol2 {
+    padding: 20px;
+  }
+
+  .login {
+    border: 1px solid #6c63ff;
+    padding: 8px 10px;
+    background-color: #6c63ff;
+    color: #fff;
+  }
+  
+  img {
+    margin-top: 80px;
+  }
+  
+  button {
+    padding: 7px 30px;
+    border-radius: 8px;
+    background-color: #6c63ff;
+    color: white;
+  }
+  
+  button:hover {
+    border: 2px solid black;
+    text-decoration: underline;
+  }
+  
+  /* Extra small devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap*/
+  
+  /* Small devices (landscape phones, 576px and up)*/
+  @media only screen and (max-width: 600px) {
+ 
+    .mycol {
+      padding: 5px;
+      box-shadow: 3px 3px #888888;
+      border-radius: 20px;
+      margin-right: 20px;
+    }
+    .ssc {
+      display: none  ;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up)*/
+  @media only screen and (max-width: 900px) {
+ 
+    .mycol {
+      padding: 10px;
+      box-shadow: 3px 3px #888888;
+      border-radius: 20px;
+      margin-right: 30px;
+    }
+    .ssc {
+      display: none;
+    }
+  }
+  
+  /*Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .mycol {
+      padding: 15px;
+      box-shadow: 3px 3px #888888;
+      border-radius: 20px;
+      margin-right: 40px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up)*/
+  @media (min-width: 1200px) {
+    .mycol {
+      padding: 20px;
+      box-shadow: 3px 3px #888888;
+      border-radius: 20px;
+      margin-right: 50px;
+    }
+  }
+  
+ 

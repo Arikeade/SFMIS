@@ -1,0 +1,42 @@
+.top {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mytop {
+    padding: 8px;
+    font-size: 20px;
+    color: #6c63ff;
+  }
+  
+  .myrow {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .entries {
+    color: #6c63ff;
+    font-size: 20px;
+  }
+  
+  .entry {
+    color: #6c63ff;
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  #search {
+    border: 1px solid #6c63ff;
+    border-radius: 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: #113b42;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .table{  
+    font-size: 2px ;  
+    }  
+  }

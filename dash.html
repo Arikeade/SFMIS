@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+        />
+        <title>DASHBOARD</title>
+        <script
+        type="text/javascript"
+        src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+        <link href="dash.css" rel="stylesheet">
+
+   </head>
+
+    <body id="page-top">
+
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            
+                <li style="margin-bottom: 15px;margin-top: 50px">
+                    <a class="nav-link active" href="dash.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </span>
+                        DASHBOARD
+                    </a>
+                </li>
+            
+
+                
+                <li style="margin-bottom: 15px;">
+                    <a class="nav-link" href="system.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-file-earmark-bar-graph"></i></span>
+                        REPORT
+                    </a>
+                </li>
+
+                <li  style="margin-bottom: 15px;">
+                    <a class="nav-link" href="users.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-person-fill"></i></span>
+                        USERS</a>
+                </li>
+
+            
+                <li style="margin-bottom: 15px;">
+                    <a class="nav-link" href="branch.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-bank f"></i></span>
+                        BRANCH</a>
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    <a class="nav-link" href="userlog.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-journal-bookmark-fill"></i></span>
+                        USER LOGS</a>
+                </li>
+
+                <li style="margin-bottom: 15px;">
+                    <a class="nav-link" href="index.html">
+                        <span style="font-size: 25px; padding: 20px">
+                            <i class="bi bi-box-arrow-right"></i
+                                ></span>
+                        LOGOUT</a>
+                </li>
+
+                <p style="text-align: center">
+                    <a class="nav-link" href="#">
+                    <i class="bi bi-question-diamond-fill"></i>
+                    Need Help?
+                    </a>
+                </p>
+
+            
+            </ul>
+        
+            <div id="content-wrapper" class="d-flex flex-column" style="width: 100%; margin: auto;">
+
+                <!-- Main Content -->
+                <div id="content">
+
+                    <!-- Topbar -->
+                    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 shadow" style="position: fixed; width: 88%;   z-index: 1;" >
+
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="bi bi-list"></i>
+                        </button>
+
+                        <!-- Topbar Search -->
+                    <h4 style="color: #6c63ff;">SFMIS REPORTING SYSTEM</h4>
+
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+
+                        
+                            <!-- Nav Item - Alerts -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    <i class="bi bi-envelope-exclamation" style="font-size: 25px; color: #000;"></i>
+                                    <!-- Counter - Alerts --> 
+                                    <span class="badge badge-danger badge-counter" style="font-size: 15px;">3+</span>
+                                </a>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-primary">
+                                            
+                                            </div>
+                                        </div>
+                                        <div>
+                                            
+                                            <span class="font-weight-bold">  You have 3 new notifications......</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-success">
+                                                <i class="fas fa-donate text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            
+                                            You have 3 new notifications......
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="mr-3">
+                                            <div class="icon-circle bg-warning">
+                                                <i class="fas fa-exclamation-triangle text-white"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                        
+                                            You have 3 new notifications......
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+
+                            <!-- Nav Item - Messages -->
+                            <li class="nav-item dropdown no-arrow mx-1">
+                                <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bi bi-gear-fill" style="font-size: 25px; color: #000;"></i>
+                                
+                                    
+                                </a>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                    aria-labelledby="messagesDropdown">
+                                
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate"><i class="bi bi-gear pr-3"></i>Account Settings</div>
+                                    
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        
+                                        <div>
+                                            <div class="text-truncate"><i class="bi bi-gear pr-3"></i>Change password</div>
+                                        
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+                
+
+            <div class="container-fluid" style="padding-top: 8rem">
+                <div class="row">
+                  <!-- Earnings (Monthly) Card Example -->
+                  <div class="col-xl-4 col-md-6 mb-5">
+                    <div
+                      class="card h-100 py-1 text-center"
+                      style="
+                        border-radius: 30px 0px;
+                        margin: 0px 20px;
+                        box-shadow: 0px 3px 10px rgba(108, 99, 255, 0.5);
+                      "
+                    >
+                      <div class="card-body">
+                        <div class="row align-items-center">
+                          <div class="col-auto">
+                            <img src="images/icons8_graph_report_100px 1.png" />
+                          </div>
+                          <div class="col font-weight-bold text-primary mb-1">
+                            <a href="#"> TOTAL REPORT </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Earnings (Monthly) Card Example -->
+                  <div class="col-xl-4 col-md-6 mb-5">
+                    <div
+                      class="card h-100 py-1 text-center"
+                      style="
+                        border-radius: 30px 0px;
+                        margin: 0px 20px;
+                        box-shadow: 0px 3px 10px rgba(108, 99, 255, 0.5);
+                      "
+                    >
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <img src="images/icons8_apply_100px 1.png" />
+                          </div>
+                          <div class="col font-weight-bold text-primary mb-1">
+                            <a href="#"> TOTAL USERS </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- Earnings (Monthly) Card Example -->
+                  <div class="col-xl-4 col-md-6 mb-5">
+                    <div
+                      class="card h-100 py-1 text-center"
+                      style="
+                        border-radius: 30px 0px;
+                        margin: 0px 20px;
+                        box-shadow: 0px 3px 10px rgba(108, 99, 255, 0.5);
+                      "
+                    >
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <img src="images/icons8_increase_100px 1.png" />
+                          </div>
+                          <div class="col font-weight-bold text-primary mb-1">
+                            <a href="#"> REPORT IN 24HOURS </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="mt-5 mb-5 charts-section">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-7">
+                        <div class="border shadow-sm h-100 rounded-lg">
+                          <canvas
+                            id="myChart"
+                            style="width: 100%; height: 300px"
+                          ></canvas>
+                        </div>
+                      </div>
+        
+                      <div class="col-xl-4 col-lg-5">
+                        <div class="border shadow-sm h-100 rounded-lg">
+                          <p
+                            id="piechart_3d"
+                            style="
+                              display: block;
+                              box-sizing: border-box;
+                              height: 300px;
+                              width: 100%;
+                            "
+                          ></p>
+                        </div>
+                      </div>
+        
+                     
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+         
+        
+        
+            <script src="linechart.js"></script>
+            <script src="chart.js"></script>
+        
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+            ></script>
+            <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+            ></script>
+            <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+            ></script>
+            <script src="index.js"></script>
+            <script src="barchat.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.bundle.min.js"></script>
+    </body>
+</html>
